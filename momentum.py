@@ -20,6 +20,9 @@ if __name__ == "__main__":
     
     # initialize hyperparams
     learning_rate = 0.0001
+    beta = 0.9
+    v_a = 0
+    v_b = 0
 
     # let's see how many epochs do we need in order to achieve correct params
     # a should be 2
@@ -27,14 +30,18 @@ if __name__ == "__main__":
     # we check for an error of 0.0001
     epochs = 0
 
-    while abs(2 - a) > 0.001 or abs(30 - b) > 0.001:
+    while (abs(2 - a) > 0.001) or (abs(30 - b) > 0.001):
+        #print(abs(30 - b))
+        #print(abs(2 - a))
         for i in range(data_len):
             out = a * x[i] + b
             loss = mean_squared_error(out, y[i])
             dL_db = 2 * (out - y[i])
             dL_da = dL_db * x[i]
-            a = a - learning_rate * dL_da
-            b = b - learning_rate * dL_db
+            v_a = beta * v_a + (1 - beta) * dL_da
+            v_b = beta * v_b + (1 - beta) * dL_db
+            a = a - learning_rate * v_a
+            b = b - learning_rate * v_b
         epochs += 1
     print("Final a is: %f"%a)
     print("Final b is: %f"%b)
