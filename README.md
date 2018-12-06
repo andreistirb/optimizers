@@ -8,9 +8,9 @@ It stops when both parameters reach a 0.001 difference between learned weights a
 
 Below we show results: number of epochs until it reaches stopping condition described above
 
-Optimizer | Number of epochs | Learning Rate
-----------|-----------------|--------------
-Stochastic Gradient Descent | 6644 | 0.0001
+Optimizer | Number of epochs | Learning Rate | Observations 
+----------|-----------------|--------------|------
+Stochastic Gradient Descent | 6644 | 0.0001 | diverges with a higher learning rate
 Momentum | 643 | 0.001
 Adagrad | |
 Rmsprop | | 
