@@ -19,9 +19,9 @@ if __name__ == "__main__":
     b = 1
     
     # initialize hyperparams
-    learning_rate = 0.0001
+    learning_rate = 0.001
     beta = 0.9
-    v_a = 0
+    v_a = 100
     v_b = 0
 
     # let's see how many epochs do we need in order to achieve correct params
