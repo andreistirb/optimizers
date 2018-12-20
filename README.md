@@ -13,7 +13,7 @@ Optimizer | Number of epochs | Learning Rate | Observations
 Stochastic Gradient Descent | 6644 | 0.0001 | diverges with a higher learning rate
 Momentum | 643 | 0.001
 Adagrad | 88 | 10
-Rmsprop | 2275 | 0.001 | gamma = 0.9
+Rmsprop | 2094 | 0.001 | gamma = 0.999
 Adam | 21 | 25 | beta = 0.9, gamma = 0.999
 Eve | | 
 Adagrad ann | | 

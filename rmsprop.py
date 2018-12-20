@@ -21,7 +21,7 @@ if __name__ == "__main__":
     
     # initialize hyperparams
     learning_rate = 0.001
-    gamma = 0.9
+    gamma = 0.999
 
     # let's see how many epochs do we need in order to achieve correct params
     # a should be 2
