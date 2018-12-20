@@ -12,10 +12,13 @@ Optimizer | Number of epochs | Learning Rate | Observations
 ----------|-----------------|--------------|------
 Stochastic Gradient Descent | 6644 | 0.0001 | diverges with a higher learning rate
 Momentum | 643 | 0.001
-Adagrad | |
+Adagrad | 88 | 10
 Rmsprop | | 
 Adam | | 
 Eve | | 
 Adagrad ann | | 
 Adam ann | |
+
+# Theory
+Best article: http://ruder.io/optimizing-gradient-descent/index.html
 

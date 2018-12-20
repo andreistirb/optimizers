@@ -27,7 +27,7 @@ if __name__ == "__main__":
     # let's see how many epochs do we need in order to achieve correct params
     # a should be 2
     # b should be 30
-    # we check for an error of 0.0001
+    # we check for an error of 0.001
     epochs = 0
 
     while (abs(2 - a) > 0.001) or (abs(30 - b) > 0.001):
