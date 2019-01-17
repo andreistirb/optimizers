@@ -18,6 +18,7 @@ Adam | 21 | 25 | beta = 0.9, gamma = 0.999
 Eve | | 
 Adagrad ann | | 
 Adam ann | |
+AMSGrad | |
 
 # Theory
 Best article: http://ruder.io/optimizing-gradient-descent/index.html
